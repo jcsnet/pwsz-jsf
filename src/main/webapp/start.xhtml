@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>JUG Tarnow</title>
+</h:head>
+
+<h:body>
+    <h3>JUG Tarnow - JSF Example Start!</h3>
+
+    <h:form>
+
+        <h:outputText value="Type your name :" for="name"></h:outputText>
+        <h:inputText value="#{helloBean.name}" id="name"></h:inputText>
+        <br/>
+
+        <h:outputText value="Type your surname :" for="surname"></h:outputText>
+        <h:inputText value="#{helloBean.surname}" id="surname"></h:inputText>
+        <br/>
+
+        <h:outputText value="Type your birth year :" for="birthYear"></h:outputText>
+        <h:inputText value="#{helloBean.dateBirth}" id="birthYear"></h:inputText>
+
+        <br/><br/>
+        <h:commandButton value="Send information" action="welcome"></h:commandButton>
+    </h:form>
+
+</h:body>
+
+</html>
